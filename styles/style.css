@@ -1,0 +1,47 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+/* Barra lateral esquerda de navegação */
+
+nav{
+    padding: 5px;
+    width: 72px;
+    height: 100%;
+    background: #1a1c20;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li img{
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+nav ul li img#main-avatar{
+    border-radius: 15px;
+}
+
+.divisor-linha{
+    margin-top: 13px;
+    margin-bottom: 5px;
+    height: 1px;
+    width: 50%;
+    border-bottom: 2px solid #292b2f;
+}
