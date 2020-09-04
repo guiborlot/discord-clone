@@ -12,8 +12,44 @@ body, html{
 
 /* Barra lateral esquerda de navegação */
 
+@keyframes icon-expansion{
+    from {
+        border-radius: 50%;
+    }
+    to{
+        border-radius: 10px;
+    }
+}
+
+@keyframes detail-white{
+    from{
+        background: #fff;
+        height: 10%;
+    }
+    to{
+        background: #fff;
+        height: 50%;
+    }
+}
+
+@keyframes svg-animation-out{
+    from{
+        fill: #33363d;
+    }
+    to{
+        fill: #41b782;
+    }
+}
+
+@keyframes svg-animation-in{
+    from{
+        fill: #41b782;
+    }
+    to{
+        fill: #fff;
+    }
+}
 nav{
-    padding: 5px;
     width: 72px;
     height: 100%;
     background: #1a1c20;
@@ -22,16 +58,32 @@ nav{
 nav ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
-nav ul li img{
+nav ul li{
+    display: flex;
+    width: 100%;
+}
+
+nav ul li img, nav ul li svg{
     margin-top: 10px;
-    vertical-align: middle;
+    margin-left: 2px;
     width: 48px;
     height: 48px;
     border-radius: 50%;
     border: 2px solid white;
+}
+
+nav ul li svg{
+    border: none;
+}
+
+nav ul li img:hover{
+    animation: icon-expansion 1s forwards;
+}
+
+nav ul li svg:hover{
+    animation: icon-expansion 1s forwards;
 }
 
 nav ul li img#main-avatar{
@@ -39,9 +91,41 @@ nav ul li img#main-avatar{
 }
 
 .divisor-linha{
+    position: relative;
+    left: 16px;
     margin-top: 13px;
     margin-bottom: 5px;
-    height: 1px;
     width: 50%;
-    border-bottom: 2px solid #292b2f;
+    border-bottom: 3px solid #292b2f;
+}
+
+.detail-avatar{
+    
+    position: relative;
+    align-self: center;
+    left: -6px;
+    width: 10px;
+    height: 80%;
+    border-radius: 15%;
+    background: #1a1c20;
+}
+
+nav ul li:hover div{
+    animation: detail-white 0.5s forwards;
+}
+
+.out-icon{    
+    fill: #33363d;
+}
+
+.in-icon{
+    fill: #41b782;
+}
+
+nav ul li:hover .out-icon{
+    animation: svg-animation-out 0.5 forwards;
+}
+
+nav ul li:hover .in-icon{
+    animation: svg-animation-in 0.5 forwards;
 }
