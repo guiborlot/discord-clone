@@ -8,69 +8,167 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css">
 
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>
-                <div class="detail-avatar"></div>
-                <a href=""><img id="main-avatar" src="assets/discord.gif" alt=""></a>
-            </li>
-            <div class="divisor-linha"></div>
-            <li>
-                <div class="detail-avatar"></div>
-                <a href=""><img src="assets/discord.gif" alt=""></a>
-            </li>
-            <li>
-                <div class="detail-avatar"></div>
-                <a href=""><img src="assets/discord.gif" alt=""></a>
-            </li>
-            <li>
-                <div class="detail-avatar"></div>
-                <a href=""><img src="assets/discord.gif" alt=""></a>
-            </li>
-            <li>
-                <div class="detail-avatar"></div>
-                <a href=""><img src="assets/discord.gif" alt=""></a>
-            </li>
-            <li>
-                <div class="detail-avatar"></div>
-                <a href=""><img src="assets/discord.gif" alt=""></a>
-            </li>
-            <li>
-                <div class="detail-avatar"></div>
-                <a href=""><img src="assets/discord.gif" alt=""></a>
-            </li>
-            <li>
-                <div class="detail-avatar"></div>
-                <a href=""><img src="assets/discord.gif" alt=""></a>
-            </li>
-            <li>
-                <div class="detail-avatar"></div>
-                <a href=""><svg width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path class="out-icon" d="M0 0h24v24H0z" fill="none"/>
-                    <path class="in-icon" d="m8 11.595h3.5104v-3.5948h1.1701v3.5948h3.5104v1.1983h-3.5104v3.5948h-1.1701v-3.5948h-3.5104z" stroke-width=".59205"/>
-                   </svg></a>
-            </li>
-            <li>
-                <div class="detail-avatar"></div>
-                <a href=""><svg width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path class="out-icon" d="M0 0h24v24H0z" fill="none"/>
-                    <path class="in-icon" d="m12 11.56c-0.244 0-0.44 0.196-0.44 0.44s0.196 0.44 0.44 0.44 0.44-0.196 0.44-0.44-0.196-0.44-0.44-0.44zm0-3.56c-2.208 0-4 1.792-4 4s1.792 4 4 4 4-1.792 4-4-1.792-4-4-4zm0.876 4.876-3.276 1.524 1.524-3.276 3.276-1.524z" stroke-width=".4"/>
-                   </svg></a>
-            </li>
-            <div class="divisor-linha"></div>
-            <li>
-                <div class="detail-avatar"></div>
-                <a href=""><svg width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path class="out-icon" d="M0 0h24v24H0z" fill="none"/>
-                    <path class="in-icon" d="m16.5 10.676h-2.5714v-3.1765h-3.8571v3.1765h-2.5714l4.5 3.7059zm-9 4.7647v1.0588h9v-1.0588z" stroke-width=".58338"/>
-                   </svg></a>
-            </li>
-        </ul>
-    </nav>
+    <!-- Container -->
+    <div id="container">
+        <!-- Nav bar -->
+        <nav>
+            <ul>
+                <li>
+                    <div class="detail-avatar"></div>
+                    <a href=""><img id="main-avatar" src="assets/discord.gif" alt=""></a>
+                </li>
+                <div class="divisor-linha"></div>
+                <li>
+                    <div class="detail-avatar"></div>
+                    <a href=""><img src="assets/discord.gif" alt=""></a>
+                </li>
+                <li>
+                    <div class="detail-avatar"></div>
+                    <a href=""><img src="assets/discord.gif" alt=""></a>
+                </li>
+                <li>
+                    <div class="detail-avatar"></div>
+                    <a href=""><img src="assets/discord.gif" alt=""></a>
+                </li>
+                <li>
+                    <div class="detail-avatar"></div>
+                    <a href=""><img src="assets/discord.gif" alt=""></a>
+                </li>
+                <li>
+                    <div class="detail-avatar"></div>
+                    <a href=""><img src="assets/discord.gif" alt=""></a>
+                </li>
+                <li>
+                    <div class="detail-avatar"></div>
+                    <a href=""><img src="assets/discord.gif" alt=""></a>
+                </li>
+                <li>
+                    <div class="detail-avatar"></div>
+                    <a href=""><img src="assets/discord.gif" alt=""></a>
+                </li>
+                <li>
+                    <div class="detail-avatar"></div>
+                    <a href=""><svg width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path class="out-icon" d="M0 0h24v24H0z" fill="none"/>
+                        <path class="in-icon" d="m8 11.595h3.5104v-3.5948h1.1701v3.5948h3.5104v1.1983h-3.5104v3.5948h-1.1701v-3.5948h-3.5104z" stroke-width=".59205"/>
+                       </svg></a>
+                </li>
+                <li>
+                    <div class="detail-avatar"></div>
+                    <a href=""><svg width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path class="out-icon" d="M0 0h24v24H0z" fill="none"/>
+                        <path class="in-icon" d="m12 11.56c-0.244 0-0.44 0.196-0.44 0.44s0.196 0.44 0.44 0.44 0.44-0.196 0.44-0.44-0.196-0.44-0.44-0.44zm0-3.56c-2.208 0-4 1.792-4 4s1.792 4 4 4 4-1.792 4-4-1.792-4-4-4zm0.876 4.876-3.276 1.524 1.524-3.276 3.276-1.524z" stroke-width=".4"/>
+                       </svg></a>
+                </li>
+                <div class="divisor-linha"></div>
+                <li>
+                    <div class="detail-avatar"></div>
+                    <a href=""><svg width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path class="out-icon" d="M0 0h24v24H0z" fill="none"/>
+                        <path class="in-icon" d="m16.5 10.676h-2.5714v-3.1765h-3.8571v3.1765h-2.5714l4.5 3.7059zm-9 4.7647v1.0588h9v-1.0588z" stroke-width=".58338"/>
+                       </svg></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End of Nav bar -->
+        <!-- Container -->
+    
+        <div class="players-list">
+            <div class="top-bar">
+                <input type="search" placeholder="Encontre ou comece uma conversa">
+            </div>
+            <div>
+                <div class="friends-nitro">
+                    <svg class="friends-icon" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path class="friends-icon" fill="none" d="M0.5,0 L0.5,1.5 C0.5,5.65 2.71,9.28 6,11.3 L6,16 L21,16 L21,14 C21,11.34 15.67,10 13,10 C13,10 12.83,10 12.75,10 C8,10 4,6 4,1.5 L4,0 L0.5,0 Z M13,0 C10.790861,0 9,1.790861 9,4 C9,6.209139 10.790861,8 13,8 C15.209139,8 17,6.209139 17,4 C17,1.790861 15.209139,0 13,0 Z" transform="translate(2 4)"></path><path d="M0,0 L24,0 L24,24 L0,24 L0,0 Z M0,0 L24,0 L24,24 L0,24 L0,0 Z M0,0 L24,0 L24,24 L0,24 L0,0 Z"></path></g></svg>
+                    <a href="">Amigos</a>
+                </div>
+                <div class="friends-nitro">
+                    <svg class="friends-icon" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24"><path class="friends-icon" fill="currentColor" d="M2.98966977,9.35789159 C2.98966977,9.77582472 2.63442946,10.1240466 2.20807287,10.1240466 L1.78171628,10.1240466 C1.35535969,10.1240466 0.999948837,9.77582472 0.999948837,9.35789159 C0.999948837,8.93995846 1.35535969,8.59173658 1.78171628,8.59173658 L2.20807287,8.59173658 C2.63442946,8.59173658 2.98966977,8.93995846 2.98966977,9.35789159 Z M22.2467643,9.14892503 C24.0942527,12.9800344 22.3888264,17.5772989 18.3384388,19.3882867 C14.4302837,21.1297305 9.74036124,19.457998 7.9638186,15.6268886 C7.60857829,14.8607335 7.3954,14.0248673 7.32428372,13.189001 L5.76091938,13.189001 C5.33456279,13.189001 4.97932248,12.840612 4.97932248,12.4226788 C4.97932248,12.0047457 5.33456279,11.6565238 5.76091938,11.6565238 L8.03493488,11.6565238 C8.46129147,11.6565238 8.81653178,11.3083019 8.81653178,10.8903688 C8.81653178,10.4724357 8.46129147,10.1240466 8.03493488,10.1240466 L4.41090388,10.1240466 C3.98454729,10.1240466 3.62913643,9.77582472 3.62913643,9.35789159 C3.62913643,8.93995846 3.98454729,8.59173658 4.41090388,8.59173658 L9.45606667,8.59173658 C9.88242326,8.59173658 10.2376636,8.24334752 10.2376636,7.82541439 C10.2376636,7.40748126 9.88242326,7.05925937 9.45606667,7.05925937 L7.3954,7.05925937 C6.75586512,7.05925937 6.18727597,6.57161499 6.18727597,5.87517123 C6.18727597,5.24827153 6.68474884,4.69091591 7.3954,4.69091591 L15.4250589,4.69091591 C18.267493,4.8303384 20.9676946,6.43235968 22.2467643,9.14892503 Z M13.2662961,8.38056332 C11.0193969,9.3919615 10.0341721,11.9973566 11.065955,14.1998642 C12.097738,16.4023718 14.755645,17.3681317 17.0025442,16.3567335 C19.249614,15.3453354 20.2346682,12.7399402 19.2028853,10.5374326 C18.1711023,8.33492503 15.5131953,7.36916515 13.2662961,8.38056332 Z M16.8462589,9.84548582 L18.2673907,12.2138293 C18.338507,12.3530846 18.338507,12.4227958 18.2673907,12.5620512 L16.8462589,14.9303946 C16.7751426,15.0696499 16.6330806,15.0696499 16.5619643,15.0696499 L13.7906465,15.0696499 C13.6485845,15.0696499 13.5774682,14.9999387 13.5065225,14.9303946 L12.0852202,12.5620512 C12.0142744,12.4227958 12.0142744,12.3530846 12.0852202,12.2138293 L13.5065225,9.84548582 C13.5774682,9.7062305 13.7197008,9.7062305 13.7906465,9.7062305 L16.5619643,9.7062305 C16.7041969,9.63651925 16.7751426,9.7062305 16.8462589,9.84548582 Z"></path></svg>
+                    <a href="">Nitro</a>
+                </div>
+            </div>
+            <div class="direct-msg">
+                <span>mensagens diretas</span>
+                <span>+</span>
+            </div>
+            <div class="players">
+                <div class="avatar">
+                    <img src="assets/discord.gif">
+                    <div class="detail-player"></div>
+                </div>
+                <span>Amigo 1</span>
+            </div>
+            <div class="players">
+                <div class="avatar">
+                    <img src="assets/discord.gif">
+                    <div class="detail-player"></div>
+                </div>
+                <span>Amigo 2</span>
+            </div>
+            <div class="players">
+                <div class="avatar">
+                    <img src="assets/discord.gif">
+                    <div class="detail-player"></div>
+                </div>
+                <span>Amigo 3</span>
+            </div>
+            <div class="players">
+                <div class="avatar">
+                    <img src="assets/discord.gif">
+                    <div class="detail-player"></div>
+                </div>
+                <span>Amigo 4</span>
+            </div>
+            <div class="players">
+                <div class="avatar">
+                    <img src="assets/discord.gif">
+                    <div class="detail-player"></div>
+                </div>
+                <span>Amigo 5</span>
+            </div>
+            <div class="players">
+                <div class="avatar">
+                    <img src="assets/discord.gif">
+                    <div class="detail-player"></div>
+                </div>
+                <span>Amigo 6</span>
+            </div>
+
+            <div id="me">
+                <div id="me-img">
+                    <img src="assets/discord.gif" alt="">
+                </div>
+                <div id="detail-me"></div>
+                <div id="text-me">
+                    <span id="my-name">Raffa Moreira</span>
+                    <span id="my-id">#7777</span>
+                </div>
+                <div id="icones-me">
+                    <div class="icons-me">
+                        <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="20"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/></svg>
+                    </div>
+                    <div class="icons-me">
+                        <svg class="icone" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="20"><path d="M0 0h24v24H0z" fill="none" opacity=".1"/><path d="M12 1c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z"/></svg>
+                    </div>
+                    <div class="icons-me">
+                        <svg class="icone" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="20" viewBox="0 0 24 24" width="20"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/></g></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+    </div><!-- End of container -->
 </body>
 </html>
