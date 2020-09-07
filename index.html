@@ -19,10 +19,9 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <!-- Container -->
-    <div id="container">
-        <!-- Nav bar -->
-        <nav>
+    <div id="container"><!-- Container -->
+        
+        <nav><!-- Nav bar -->
             <ul>
                 <li>
                     <div class="detail-avatar"></div>
@@ -80,11 +79,9 @@
                        </svg></a>
                 </li>
             </ul>
-        </nav>
-        <!-- End of Nav bar -->
-        <!-- Container -->
-    
-        <div class="players-list">
+        </nav><!-- End of Nav bar -->
+        
+        <div class="players-list"><!-- Player List -->
             <div class="top-bar">
                 <input type="search" placeholder="Encontre ou comece uma conversa">
             </div>
@@ -166,8 +163,24 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div><!-- end of player list -->
     
+        <div id="top-menu">
+            <div id="mid-menu">
+                <div id="friends-menu">
+                    <svg class="friends-icon" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path class="friends-icon" fill="none" d="M0.5,0 L0.5,1.5 C0.5,5.65 2.71,9.28 6,11.3 L6,16 L21,16 L21,14 C21,11.34 15.67,10 13,10 C13,10 12.83,10 12.75,10 C8,10 4,6 4,1.5 L4,0 L0.5,0 Z M13,0 C10.790861,0 9,1.790861 9,4 C9,6.209139 10.790861,8 13,8 C15.209139,8 17,6.209139 17,4 C17,1.790861 15.209139,0 13,0 Z" transform="translate(2 4)"></path><path d="M0,0 L24,0 L24,24 L0,24 L0,0 Z M0,0 L24,0 L24,24 L0,24 L0,0 Z M0,0 L24,0 L24,24 L0,24 L0,0 Z"></path></g></svg>
+                    <span>Amigos</span>
+                </div>
+                <div id="divider"></div>
+                <ul id="ul-menu">
+                    <li class="menu-sup"><a href="">Disponível</a></li>
+                    <li class="menu-sup"><a href="">Todos</a></li>
+                    <li class="menu-sup"><a href="">Pendente</a></li>
+                    <li class="menu-sup"><a href="">Bloqueado</a></li>
+                    <li id="adc-friend"><a href="">Adicionar amigo</a></li>
+                </ul>
+            </div>
+        </div>
         
     </div><!-- End of container -->
 </body>
