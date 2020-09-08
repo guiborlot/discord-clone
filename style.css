@@ -381,6 +381,7 @@ span#my-id{
     height: 48px;
     background: #33363d;
     border-bottom: 1px solid black;
+    z-index: 2;
 }
 
 #mid-menu{
@@ -398,10 +399,11 @@ span#my-id{
     /* border: solid 2px blue; */
 }
 
-#divider{
+.divider{
+    position: relative;
     width: 1px;
-    height: 50%;
     background: #40434a;
+    height: 50%;
     margin: 0 15px;
 }
 
@@ -436,4 +438,99 @@ span#my-id{
 .menu-sup a:hover{
     color: #8f9399;
     text-decoration: none;
+}
+
+#ul-direita-menu{
+    display: flex;
+    position: fixed;
+    right: 10px;
+    top: 8px;
+}
+
+.icon-menu-sup{
+    fill: #b5b8bb;
+}
+
+.menu-sup-direito{
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.menu-sup-direito:hover .icon-menu-sup{
+    fill: #fff;
+}
+
+.divider-right{
+    position: relative;
+    width: 1px;
+    background: #40434a;
+    height: 28px;
+    margin: 0 15px;
+    /* border: solid 4px red; */
+}
+
+#active-now{
+    width: 410px;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    background: #2b2d33;
+    z-index: 1;
+}
+
+#chat-container{
+    background: #36393f;
+    position: absolute;
+    left: 313px;
+    width: 1200px;
+    height: 100vh;
+}
+
+#active-now-div{
+    color: white;
+    position: relative;
+    top: 60px;
+}
+
+#text-active-now{
+    margin-left: 12px;
+    text-transform: uppercase;
+    color: #b9bcbf;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+#popup-active-now{
+    border-radius: 5%;
+    margin: 5px 12px;
+    padding: 20px;
+    background: #33363d;
+}
+
+#popup-active-now h2{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+#popup-active-now p{
+    font-size: 10pt;
+    color: #b9bcbf;
+}
+
+#wumpus{
+    position: absolute;
+    top: 350px;
+    left: 350px;
+}
+
+#wumpus p{
+    display: inline-flex;
+    width: 60%;
+    margin-top: 15px;
+    justify-content: center;
+    font-size: 11pt;
+    color: gray;
 }
